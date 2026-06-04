@@ -32,7 +32,7 @@ export default function UploadBill() {
       formData.append("bill", file);
 
       const res = await axios.post(
-        "http://localhost:5000/api/food/upload",
+        "https://foodchainai-server.onrender.com/api/food/upload",
         formData,
         {
           headers: {

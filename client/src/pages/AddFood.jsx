@@ -157,7 +157,7 @@ export default function AddFood() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/food/add", {
+      const res = await axios.post("https://foodchainai-server.onrender.com/api/food/add", {
         "Event Type": formData.eventType,
         "Quantity of Food": Number(formData.quantityOfFood),
         "Storage Conditions": formData.storageConditions,

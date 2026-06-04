@@ -10,7 +10,7 @@ export default function DataTable() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/food");
+      const res = await fetch("https://foodchainai-server.onrender.com/api/food");
       const result = await res.json();
       setData(result);
     } catch (err) {

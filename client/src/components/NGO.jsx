@@ -44,7 +44,7 @@ export default function NGO() {
   const combinedFoodTypes = foodTypes.length > 0 ? foodTypes : defaultFoodTypes;
 
   // API base URL
-  const API_BASE_URL = "http://localhost:5000";
+  const API_BASE_URL = "https://foodchainai-server.onrender.com";
 
   // Fetch NGOs from API
   const fetchNGOs = async () => {
